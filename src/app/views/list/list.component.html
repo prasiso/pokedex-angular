@@ -1,1 +1,7 @@
-<p>list works!</p>
+<input type="text" id="poke-filter" placeholder="Digite Aqui" maxlength="20">
+<ul class="poke-list">
+    <li class="poke-list-item" *ngFor="let pokemom of pokemomList">
+        <img src="//serebii.net/pokedex-xy/icon/{{pokemom.number | number:'3.0-0'}}.png" alt="">
+        <span>{{pokemom.number | number:'3.0-0'}} - {{pokemom.name}}</span>
+    </li>
+</ul>
